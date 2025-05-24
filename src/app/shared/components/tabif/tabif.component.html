@@ -1,0 +1,63 @@
+<header class="bg-info text-center p-1 text-capitalize mb-4"><strong><h1>Tab by usnig *ngif</h1></strong></header>
+
+ <ul class="nav nav-pills">
+    <li class="nav-item">
+        <a  
+        (click)="onTabchange('html')"
+        [ngClass]="{
+            'active' : selectedskill.toLowerCase().includes('html')
+        }"
+        class="nav-link" href="javascript:;">html</a>
+    </li>
+    <li class="nav-item">
+        <a 
+        (click)="onTabchange('css')"
+        [ngClass]="{
+            'active' : selectedskill.toLowerCase().includes('css')
+        }"
+        class="nav-link" href="javascript:;">css</a>
+    </li>
+    <li class="nav-item">
+        <a 
+        (click)="onTabchange('javascript')"
+        [ngClass]="{
+            'active' : selectedskill.toLowerCase().includes('javascript')
+        }"
+        class="nav-link" href="javascript:;">javascript</a>
+    </li>
+    <li class="nav-item">
+        <a 
+        (click)="onTabchange('angular')"
+        [ngClass]="{
+            'active' : selectedskill.toLowerCase().includes('angular')
+        }"
+        class="nav-link" href="javascript:;">angular</a>
+    </li>
+ </ul>
+ 
+ <div class="tab-body">
+    <div class="card" *ngIf="selectedskill.toLowerCase().includes('html')">
+        <div class="card-body">
+            <strong>html</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa iste eius aperiam mollitia cumque corrupti sed, libero cupiditate? Reprehenderit est hic deleniti inventore, doloribus praesentium corrupti. Quos, omnis inventore.
+        </div>
+    </div>
+    <div class="card" *ngIf="selectedskill.toLowerCase().includes('css')">
+        <div class="card-body">
+            <strong>css</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa iste eius aperiam mollitia cumque corrupti sed, libero cupiditate? Reprehenderit est hic deleniti inventore, doloribus praesentium corrupti. Quos, omnis inventore.
+        </div>
+    </div>
+    <div class="card" *ngIf="selectedskill.toLowerCase().includes('javascript')">
+        <div class="card-body">
+            <strong>javascript</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa iste eius aperiam mollitia cumque corrupti sed, libero cupiditate? Reprehenderit est hic deleniti inventore, doloribus praesentium corrupti. Quos, omnis inventore.
+        </div>
+    </div>
+    <div class="card" *ngIf="selectedskill.toLowerCase().includes('angular')">
+        <div class="card-body">
+            <strong>angular</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa iste eius aperiam mollitia cumque corrupti sed, libero cupiditate? Reprehenderit est hic deleniti inventore, doloribus praesentium corrupti. Quos, omnis inventore.
+        </div>
+    </div>
+ </div>

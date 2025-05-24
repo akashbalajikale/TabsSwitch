@@ -1,0 +1,68 @@
+ .imgcontainer{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid;
+    padding: 0 0;
+    margin-left: 0;
+    img{
+        width: 300px;
+        height: 100%;
+        object-fit: cover;
+        padding-top: 18px;
+    }
+    
+ }
+  .tab{      
+    margin-left: 120px;
+  }
+
+ .cls{
+    border-color: 2px solid !important;
+    background-color: red;
+ }
+ .cls1{
+    border-color: 2px solid !important;
+    background-color: greenyellow;
+ }
+   
+  
+  .actions {
+    margin: 10px 0;
+  }
+  
+  .actions button {
+    margin-right: 10px;
+    padding: 6px 12px;
+  }
+  
+  .heart {
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+  }
+  
+  .heart.liked {
+    color: red;
+  }
+  
+  .tabs button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .tabs button:hover {
+    background: #ddd;
+  }
+  
+  .tab-content {
+    margin-top: 10px;
+  }
+  
+  .list{
+    list-style: none;
+  }
