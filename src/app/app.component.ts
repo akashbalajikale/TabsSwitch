@@ -8,6 +8,7 @@ import { MobileService } from './shared/services/mobile.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+[x: string]: any;
  
     title = 'tabswitch';
     productarray : Array<Iproduct> =[]  
